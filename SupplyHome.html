@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUPPLY DETAILS</title>
+        <link rel="stylesheet" href="CSS/supply.css">
+    </head>
+    <body>
+        <h2>SUPPLY DETAILS</h2>
+        <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h3>Insert Details</h3>
+            <form action="supply_insert.php" method="POST">
+            <p>
+                <label>Supply_ID : </label>
+                <input type="number" name="ISupply_id" /><p>
+                <label>MFR_ID </label>
+                <input type="number" name="IMFR_id" /><p>
+                <label>Product_ID </label>
+                <input type="number" name="IP_id" /><p>
+                <input type="submit" id="insert" value="INSERT" />
+                <input type="reset" id="reset" value="CLEAR" />
+            </p>
+        </form>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h3>Supply Details</h3>
+            <form action="supply_select.php" method="POST">    
+            <p>
+                <label>Display All Supply details : </label>
+                <input type="submit" id="insert" value="VIEW" />
+            </p>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
