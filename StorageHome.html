@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storage Details</title>
+        <link rel="stylesheet" href="CSS/Storage.css">
+    </head>
+    <body>
+        <h2>STORAGE DETAILS</h2>
+        <div class="row">
+            <div class="column"  style="background-color:#aaa;">
+                <h3>Insert Storage Details</h3>
+                <form action="S_insert.php" method="POST">
+                    <p>
+                        <label>Slot : </label>
+                        <input type="number" name="ISlot" /><p>
+                        <label>Capacity </label>
+                        <input type="number" name="ICapacity" /><p>
+                        <label>Availability </label>
+                        <input type="number" name="IAvailability" /><p>
+                        <input type="submit" id="insert" value="INSERT" />
+                        <input type="reset" id="reset" value="CLEAR" />
+                    </p>
+                </form>
+            </div>
+            <div class="column"  style="background-color:#aaa;">
+                <h3>Update Storage Details</h3>
+                <form action="S_update.php" method="POST">
+                    <p>
+                        <label>Search by Slot : </label>
+                        <input type="number" name="USlot" /><p>
+                        <label>Capacity </label>
+                        <input type="number" name="UCapacity" /><p>
+                        <label>Availability </label>
+                        <input type="number" name="UAvailability" /><p>
+                        <input type="submit" id="insert" value="UPDATE" />
+                        <input type="reset" id="reset" value="CLEAR" />
+                    </p>
+                </form>
+            </div>
+            <div class="column" style="background-color:#aaa;">
+                <h3>Display Storage Details</h3>
+                <form action="S_select.php" method="POST">
+                    <p>
+                        <label>Display All Storage details : </label>
+                        <input type="submit" id="insert" value="VIEW" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

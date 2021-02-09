@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Worker Details</title>
+        <link rel="stylesheet" href="css/Storage.css">
+    </head>
+    <body>
+        <div class="row">
+            <h2>WORKER DETAILS</h2>
+            <div class="column" style="background-color: #aaa;">
+                <h3>Insert Worker Details</h3>
+                <form action="W_insert.php" method="POST">
+                    <p>
+                        <label>Employee ID : </label>
+                        <input type="number" name="EMPID" /><p>
+                        <label>NAME : </label>
+                        <input type="text" name="ENAME" /><p>
+                        <label>POST </label>
+                        <input type="text" name="EPOST" /><p>
+                        <label>Contact no. : </label>
+                        <input type="number" name="ECON" /><p>
+                        <input type="submit" id="insert" value="INSERT" />
+                        <input type="reset" id="reset" value="CLEAR" />
+                    </p>
+                </form>
+            </div>
+            <div class="column" style="background-color: #aaa;">
+                <h3>Update Worker Details</h3>
+                <form action="W_update.php" method="POST">
+                    <p>
+                        <label>Enter ID : </label>
+                        <input type="number" name="U_ID" /><p>
+                         <label>NAME : </label>
+                        <input type="text" name="U_NAME" /><p>
+                        <label>POST : </label>
+                        <input type="text" name="U_POST" /><p>
+                        <label>CONTACT NO : </label>
+                        <input type="number" name="U_ECON" /><p>
+                        <input type="submit" id="insert" value="UPDATE" />
+                        <input type="reset" id="reset" value="CLEAR" />
+                    </p>
+                </form>
+            </div>
+            <div class="column" style="background-color: #aaa;">
+                <h3>Display Worker Details</h3>
+                <form action="W_select.php" method="POST">
+                    <p>
+                        <label>Display All Worker details : </label>
+                        <input type="submit" id="insert" value="VIEW" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

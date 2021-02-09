@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(71, 212, 205);
+    
+}
+.topnav {
+    overflow: hidden;
+    background-color:darkgrey;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    background-color:cornflowerblue
+}
+
+.topnav a{
+    float: left;
+    font-size: 20px;
+    padding: 30px;
+    display: block;
+    width:150px;
+    text-decoration: none;
+    color: white;
+}
+.topnav a:hover {
+    background-color: rgb(31, 209, 85);
+    color: black;
+  }
+  .image{ 
+        margin-right: 330px;
+        border: 10px solid #000000;;
+       box-sizing: border-box;       
+  }
+  

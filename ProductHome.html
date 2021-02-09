@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Details</title>
+        <link rel="stylesheet" href="CSS/product.css">
+    </head>
+    <body>
+        <h2>PRODUCT DETAILS</h2>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+            <h3>Insert Product Details</h3>
+            <form action="P_insert.php" method="POST">
+                 <p>
+                    <label>Product ID : </label>
+                    <input type="number" name="IP_id" /><p>
+                    <label>Name : </label>
+                    <input type="text" name="IP_name" /><p>
+                    <label>Price : </label>
+                    <input type="number" name="IP_price" /><p>
+                    <label>MFG Date : </label>
+                    <input type="date" name="IP_md" />
+                    <br><br>
+                    <label>&nbsp&nbsp EXP Date : </label>
+                    <input type="date" name="IP_ed" /><p>
+                    <label>Type : </label>
+                    <input type="text" name="IP_type" />
+                    <label>&nbsp&nbsp MFG by : </label>
+                    <input type="number" name="IP_by" /><p>
+                    <input type="submit" id="insert" value="INSERT" />
+                    <input type="reset" id="reset" value="CLEAR" />           
+                </p>
+            </form>
+             </div>
+             <div class="column"style="background-color:#aaa;">
+                <h3>Update Product Details</h3>
+                  <form action="P_Update.php" method="POST">
+                    <p>
+                    <label>Search by Product ID : </label>
+                    <input type="number" name="UP_id" /><p>
+                    <label>Name : </label>
+                    <input type="text" name="UP_name" /><p>
+                    <label>Price : </label>
+                    <input type="number" name="UP_price" /><p>
+                    <label>MFG Date : </label>
+                    <input type="date" name="UP_md" />
+                    <br><br>
+                    <label>&nbsp&nbsp EXP Date : </label>
+                    <input type="date" name="UP_ed" /><p>
+                    <label>Type : </label>
+                    <input type="text" name="UP_type" />
+                    <label>&nbsp&nbsp MFG by : </label>
+                    <input type="number" name="UP_by" /><p>
+                    <input type="submit" id="insert" value="UPDATE" />
+                    <input type="reset" id="reset" value="CLEAR" />
+                    </p>
+                 </form>
+            </div>
+             <div class="column2" style="background-color: #aaa;">
+              <h3>Delete Product Details</h3>
+                 <form action="P_delete.php" method="POST">
+                <p>
+                    <label>Product ID : </label>
+                    <input type="number" name="DP_id" /><p>
+                    <input type="submit" id="insert" value="DELETE" />
+                    <input type="reset" id="reset" value="CLEAR" />
+                </p>
+                </form>
+             </div>
+             
+            <div class="column2" style="background-color: #aaa;">
+                <h3>Display Products</h3>
+                <form action="P_select.php" method="POST">
+                    <p>
+                        <label>Display All Product Records : </label>
+                        <input type="submit" id="insert" value="VIEW" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MANUFACTURER DETAILS</title>
+        <link rel="stylesheet" href="CSS/manufacturer.css">
+    </head>
+    <body>
+        <h2>MANUFACTURER DETAILS</h2>
+        <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h3>Insert Details</h3>
+            <form action="M_insert.php" method="POST">
+                <label>MFR ID : </label>
+                <input type="number" name="IM_id" /><p>
+                <label>Name : </label>
+                <input type="text" name="IM_name" /><p>
+                <label>Type : </label>
+                <input type="text" name="IM_type" /><p>
+                <input type="submit" id="insert" value="INSERT" />
+                <input type="reset" id="reset" value="CLEAR" />
+            </form>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+               <h3>Delete Record</h3>
+               <form action="M_delete.php" method="POST">
+                <p>
+                    <label>MFR ID : </label>
+                    <input type="number" name="DM_id" /><p>
+                    <input type="submit" id="insert" value="DELETE" />
+                    <input type="reset" id="reset" value="CLEAR" />
+                </p>
+               </form>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h3>Update Record</h3>
+            <form action="M_update.php" method="POST">
+                <p>
+                    <label>Search by MFR ID : </label>
+	            	<input type="number" name="UM_id" /><p>
+	            	<label>Name : </label>
+	            	<input type="text" name="UM_name" /><p>
+	            	<label>Type : </label>
+	            	<input type="text" name="UM_type" /><p>
+	            	<input type="submit" id="insert" value="UPDATE" />
+	            	<input type="reset" id="reset" value="CLEAR" />
+                </p>
+            </form>
+        </div>
+        <div class="column" style="background-color:#aaa;">
+            <h3>Display Records</h3>
+            <form action="M_select.php" method="POST">
+                <p>
+                    <label>Display All Manufacturer Records : </label>
+                    <br>
+		            <input type="submit" id="insert" value="VIEW" />
+                </p>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
