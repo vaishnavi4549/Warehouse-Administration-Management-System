@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    background-color:cornflowerblue
+}
+body{
+    background-color: lightblue;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    margin: 40px;
+    height: 350px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
